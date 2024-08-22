@@ -39,7 +39,14 @@
 }
 
 body {
-  background-image: url("assets/back.png");
+  background-image: url("Portfolio/assets/back.png");
+  background-size: cover;
+  background-color: #ffffff;
+  
+}
+
+.background-image {
+	display: flex;
 }
 
 img {
