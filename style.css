@@ -1,12 +1,12 @@
 .navbar-expand-lg {
-	background-color: #F6BDE9;
+	background-color: #f8f8f8;
 }
 .navbar-brand {
     font-family: '8BIT WONDER', sans-serif;
 }
 
-.nav-link	{
-	font-family: 'PF Din Text Universal', sans-serif;
+.navbar-nav {
+	justify-content: center;
 }
 
 .mt-4 {
