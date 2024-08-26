@@ -15,15 +15,13 @@
 
 .lead {
 	font-family: 'Panton Narrow', sans-serif;
-	width: 250px; 
-      height: 100px; 
-	  display: flex; 
-      align-items: center; 
-      justify-content: center; 
-      text-align: center; 
-	  background-color: #ffffff;
-	align-items: center;
-	justify-content: center;
+	width: 400px; 
+    height: 80px; 
+	display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+	background-color: #ffffff;
 	margin: auto;
     border: 2px solid black;
     border-radius: 10px;
