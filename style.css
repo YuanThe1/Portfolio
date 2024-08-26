@@ -39,13 +39,12 @@
 }
 
 body {
-	background-image: url("Portfolio/assets/back2.png");
+	background-image: url("assets/back2.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center; 
 	background-attachment: fixed; 
   }
-  
 
 img {
   border: 10px solid #555;
