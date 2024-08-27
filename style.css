@@ -48,46 +48,48 @@
 
 /* General Navbar Styles */
 .navbar-nav .nav-link {
-    border: 2px solid #fff; /* Adds a 2px white border */
+    border: 2px solid #000; /* Black border color by default */
     border-radius: 5px; /* Optional: rounds the corners of the border */
     padding: 8px 12px; /* Adjust padding for better spacing */
     margin: 0 5px; /* Adds spacing between items */
-    color: #fff; /* Default text color */
+    color: #000000; /* Default text color changed to black */
     position: relative; /* Ensure z-index works */
     z-index: 1000; /* Ensure nav links are on top */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Smooth transition */
 }
 
-/* Hover State */
-.navbar-nav .nav-link:hover {
-    background-color: #fff; /* Changes background on hover */
-    color: #000; /* Changes text color on hover */
+/* Hover State for nav-item */
+.navbar-nav .nav-item:hover .nav-link {
+    background-color: #000000; /* Black background on hover */
+    color: #ffffff; /* White text color on hover */
+    border-color: #ffffff; /* White border color on hover */
 }
 
 /* Active State */
-.navbar-nav .nav-item.active .nav-link {
-    border-color: #000; /* Changes border color for active item */
-    background-color: #fff; /* Optional: changes background color for active item */
-    color: #000; /* Changes text color for active item */
+.navbar-nav .nav-item .nav-link.active {
+    background-color: #000000; /* Black background for the active link */
+    color: #ffffff; /* White text color for the active link */
+    border-color: #ffffff; /* White border color for the active link */
 }
 
 /* Dropdown Menu Item Styles */
 .dropdown-menu .dropdown-item {
-    color: #000; /* Default text color for dropdown items */
+    color: #000000; /* Default text color for dropdown items changed to black */
     position: relative; /* Ensure z-index works */
     z-index: 1000; /* Ensure dropdown items are on top */
 }
 
 /* Hover State for Dropdown Items */
 .dropdown-menu .dropdown-item:hover {
-    background-color: black; /* Background color on hover */
-    color: white; /* Text color on hover */
+    background-color: #000000; /* Black background on hover */
+    color: #ffffff; /* White text color on hover */
 }
 
 /* Active State for Dropdown Items (optional) */
 .dropdown-menu .dropdown-item.active,
 .dropdown-menu .dropdown-item:active {
-    background-color: white; /* Background color for active item */
-    color: black; /* Text color for active item */
+    background-color: #000000; /* Black background for active item */
+    color: #ffffff; /* White text color for active item */
 }
 
 /* Other Styles */
@@ -96,16 +98,19 @@
     position: relative; /* Ensure z-index works */
     z-index: 1000; /* Ensure navbar is on top */
 }
+
 .navbar-brand {
     font-family: '8BIT WONDER', sans-serif;
     position: relative; /* Ensure z-index works */
     z-index: 1000; /* Ensure brand is on top */
 }
+
 .navbar-nav {
     justify-content: center;
     position: relative; /* Ensure z-index works */
     z-index: 1000; /* Ensure nav is on top */
 }
+
 .lead {
     font-family: 'Panton Narrow', sans-serif;
     width: 400px;
